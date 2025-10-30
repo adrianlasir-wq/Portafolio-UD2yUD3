@@ -3,56 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comandos Básicos</title>
+    <title>Guía de Cisco Packet Tracer - ASIR</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
-        <h1>Guía de Comandos Linux</h1>
+        <h1>Guía de Cisco Packet Tracer</h1>
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="contenido.html" class="activo">Comandos</a></li>
+                <li><a href="contenido.html" class="activo">Contenido</a></li>
                 <li><a href="recursos.html">Recursos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="accesibilidad.html">Accesibilidad</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Comandos esenciales</h2>
+            <h2>¿Qué es Cisco Packet Tracer?</h2>
+            <p>
+                <strong>Cisco Packet Tracer</strong> es una herramienta de simulación de redes desarrollada por Cisco 
+                que permite a los estudiantes y profesionales de informática crear, configurar y probar redes virtuales 
+                sin necesidad de disponer de equipos físicos.
+            </p>
+            <img src="img/packettracer.jpg" alt="Interfaz principal de Cisco Packet Tracer">
+        </section>
+
+        <section>
+            <h2>Funciones principales</h2>
+            <ul>
+                <li>Diseñar redes locales (LAN) y de área extensa (WAN).</li>
+                <li>Configurar routers, switches y dispositivos finales.</li>
+                <li>Simular tráfico de red y verificar conectividad.</li>
+                <li>Realizar prácticas de configuración de protocolos (DHCP, OSPF, VLAN, etc.).</li>
+                <li>Aprender conceptos de redes de manera interactiva.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Configuraciones básicas</h2>
+            <p>
+                A continuación se muestran algunos comandos comunes utilizados dentro de Packet Tracer
+                al configurar routers y switches en modo CLI:
+            </p>
             <table>
                 <thead>
                     <tr>
                         <th>Comando</th>
                         <th>Descripción</th>
-                        <th>Ejemplo</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><code>ls</code></td>
-                        <td>Lista los archivos del directorio actual.</td>
-                        <td><code>ls -l /home</code></td>
+                        <td><code>enable</code></td>
+                        <td>Accede al modo privilegiado del dispositivo.</td>
                     </tr>
                     <tr>
-                        <td><code>cd</code></td>
-                        <td>Cambia de directorio.</td>
-                        <td><code>cd /etc</code></td>
+                        <td><code>configure terminal</code></td>
+                        <td>Permite acceder al modo de configuración global.</td>
                     </tr>
                     <tr>
-                        <td><code>chmod</code></td>
-                        <td>Cambia permisos de archivos.</td>
-                        <td><code>chmod 755 script.sh</code></td>
+                        <td><code>interface gigabitethernet0/0</code></td>
+                        <td>Entra en la configuración de una interfaz de red.</td>
+                    </tr>
+                    <tr>
+                        <td><code>ip address 192.168.1.1 255.255.255.0</code></td>
+                        <td>Asigna una dirección IP y máscara de subred a la interfaz.</td>
+                    </tr>
+                    <tr>
+                        <td><code>no shutdown</code></td>
+                        <td>Activa la interfaz seleccionada.</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2025 Guía Linux - Proyecto ASIR</p>
-    </footer>
-</body>
-</html>
+        <section>
+            <h2>Consejos para usar Packet Tracer</h2>
+            <ul>
+                <li>Guarda tus proyectos frecuentemente para evitar perder tu trabajo.</li>
+                <li>Usa nombres descriptivos para los dispositivos y conexiones.</li>
+                <li>Utiliza el modo de simulación para observar el flujo de paquetes.</li>
+                <li>Apóyate
