@@ -1,65 +1,111 @@
-/* Estructura básica */
+/* ----- Estructura general ----- */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f4f4f4;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #222;
 }
 
-header, footer {
-  background: #004080;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center; /* centra el título y el menú */
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+header h1 {
+    color: white;
+    margin-bottom: 0.5rem;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
+/* ----- Menú ----- */
+.menu {
+    display: flex;
+    justify-content: center;  /* centra los elementos */
+    align-items: center;
+    list-style: none;          /* quita los puntos de enumeración */
+    padding: 0;
+    margin: 0;
+    gap: 1.5rem;               /* espacio entre los enlaces */
 }
 
-nav a.activo {
-  text-decoration: underline;
+.menu li {
+    display: inline;           /* asegura que estén en línea */
 }
 
+.menu a {
+    color: white;              /* texto en blanco */
+    text-decoration: none;     /* sin subrayado */
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ddd;               /* cambia ligeramente al pasar el ratón */
+}
+
+/* ----- Contenido principal ----- */
 main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1rem;
-  gap: 1rem;
+    padding: 1.5rem;
 }
 
-section, article, aside {
-  background: white;
-  padding: 1rem;
-  border-radius: 5px;
-  flex: 1 1 300px;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-/* Tablas y formularios */
-table, th, td {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  padding: 0.5rem;
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.6rem;
 }
 
+th {
+    background-color: #e0e0e0;
+}
+
+/* ----- Formularios ----- */
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
+input, textarea, button {
+    margin: 0.5rem 0;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* ----- Pie de página ----- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;  /* se pone en columna solo en móvil */
+        gap: 0.8rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
 }
