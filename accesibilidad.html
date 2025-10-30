@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accesibilidad Web</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Accesibilidad Web</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contenido.html">Comandos</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="accesibilidad.html" class="activo">Accesibilidad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Compromiso con la accesibilidad</h2>
+            <p>
+                Este sitio web se ha desarrollado siguiendo los principios de accesibilidad universal,
+                con el objetivo de garantizar que cualquier persona, independientemente de sus capacidades
+                o dispositivo, pueda acceder a los contenidos de forma cómoda y eficiente.
+            </p>
+            <p>
+                La estructura y el diseño siguen las
+                <a href="https://www.w3.org/WAI/standards-guidelines/wcag/es" target="_blank">
+                Pautas de Accesibilidad al Contenido Web (WCAG 2.1)</a> 
+                establecidas por el W3C (World Wide Web Consortium).
+            </p>
+
+            <section>
+                <h3>Medidas aplicadas en el desarrollo</h3>
+                <section>
+                    <h4>1. Estructura semántica</h4>
+                    <p>
+                        Todas las páginas utilizan etiquetas HTML5 adecuadas (<code>header</code>, <code>nav</code>, 
+                        <code>main</code>, <code>section</code>, <code>article</code>, <code>footer</code>), 
+                        favoreciendo la lectura por parte de lectores de pantalla y mejorando la jerarquía del contenido.
+                    </p>
+                </section>
+
+                <section>
+                    <h4>2. Contenido alternativo</h4>
+                    <p>
+                        Todas las imágenes cuentan con descripciones mediante el atributo <code>alt</code>, 
+                        permitiendo que los usuarios con discapacidad visual comprendan su contenido.
+                    </p>
+                </section>
+
+                <section>
+                    <h4>3. Formularios accesibles</h4>
+                    <p>
+                        Los formularios incluyen etiquetas <code>label</code> asociadas correctamente a cada campo,
+                        facilitando la navegación mediante teclado y su identificación por tecnologías asistivas.
+                    </p>
+                </section>
+
+                <section>
+                    <h4>4. Contraste y legibilidad</h4>
+                    <p>
+                        Se ha aplicado una paleta de colores con suficiente contraste entre texto y fondo,
+                        siguiendo las recomendaciones del nivel AA de las WCAG 2.1, para mejorar la legibilidad.
+                    </p>
+                </section>
+
+                <section>
+                    <h4>5. Diseño responsive</h4>
+                    <p>
+                        El diseño se adapta automáticamente a distintos tamaños de pantalla mediante
+                        técnicas Flexbox y <code>@media queries</code>, garantizando una correcta visualización
+                        en dispositivos móviles, tabletas y ordenadores.
+                    </p>
+                </section>
+            </section>
+
+            <section>
+                <h3>Navegación mediante teclado</h3>
+                <p>
+                    El sitio puede explorarse completamente sin necesidad de ratón.  
+                    A continuación se muestran las principales combinaciones de teclas:
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Combinación</th>
+                            <th>Función</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd></td>
+                            <td>Desplazarse entre enlaces y campos del formulario.</td>
+                        </tr>
+                        <tr>
+                            <td><kbd>Enter</kbd></td>
+                            <td>Activar el enlace o botón seleccionado.</td>
+                        </tr>
+                        <tr>
+                            <td><kbd>Alt</kbd> + <kbd>Inicio</kbd></td>
+                            <td>Ir directamente a la página de inicio (en navegadores compatibles).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3>Contacto y sugerencias</h3>
+                <p>
+                    Si detectas algún problema de accesibilidad o deseas proponer una mejora,
+                    puedes comunicarlo a través del <a href="contacto.html">formulario de contacto</a>.
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Guía Linux - Proyecto ASIR | <a href="accesibilidad.html">Accesibilidad</a></p>
+    </footer>
 </body>
 </html>
